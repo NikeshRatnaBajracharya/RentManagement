@@ -1,0 +1,356 @@
+
+<html>
+    <head>
+        <title> Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="reg/css/default.css"/>
+        <script language="JavaScript">
+
+        function validateForm1()
+        {
+
+
+        var a=document.regform.uname.value;
+        var b=document.regform.fname.value;
+        var c=document.regform.lname.value;
+        var d=document.regform.contact.value;
+        var e=document.regform.contactland.value;
+        var f=document.regform.location.value;
+        var g=document.regform.city.value;
+        var h=document.regform.zone.value;
+        var i=document.regform.usertype.value;
+        var j=document.regform.email.value;
+            var k=document.regform.remail.value;
+            var l=document.regform.pw.value;
+            var m=document.regform.rpw.value;
+            var n=document.regform.occupation.value;
+            var o=document.regform.occupationd.value;
+            var p=document.regform.gender.value;
+            var q=document.regform.date.value;
+
+
+
+
+
+            if((a==null||a=="")&&(b==null||b=="")&&(c==null||c=="")&&(d==null||d=="")
+        &&(e==null||e=="")&&(f==null||f=="")&&(g==null||g=="")&&(h==null||h=="")
+                    &&(i==null||i=="")&&(j==null||j=="")&&(k==null||k=="")&&(l==null||l=="")&&(m==null||m=="")&&(n==null||n=="")&&(o==null||o=="")&&(p==null||p=="")&&(q==null||q==""))
+        {
+
+        alert("All fields are empty");
+
+        return false;
+        }
+
+
+        if(a==null||a=="")
+        {
+
+        alert("First Name must be filled out!");
+
+        return false;
+        }
+        if(b==null||b=="")
+        {
+
+        alert("Last Name must be filled out!");
+
+        return false;
+        }
+
+        if(c==null||c=="")
+        {
+        alert("Phone number must be filled out!");
+
+        return false;
+
+        }
+
+        if(d==null||d=="")
+        {
+        alert("location is empty!");
+
+        return false;
+
+        }
+
+        if(e==null||e=="")
+        {
+        alert("City field is empty!");
+
+        return false;
+
+        }
+
+        if(f==null||f=="")
+        {
+        alert("Please select zone");
+
+        return false;
+
+        }
+
+        if(g==null||g=="")
+        {
+        alert("City field is empty");
+
+        return false;
+
+        }
+
+        if(h==null||h=="")
+        {
+        alert("Please leave your email");
+
+        return false;
+
+        }
+
+        if(i==null||i=="")
+        {
+        alert("choose password for your security");
+
+        return false;
+
+        }
+
+        if(j==null||j=="")
+        {
+        alert("Please specify gender");
+
+        return false;
+
+        }
+            if(k==null||k=="")
+            {
+                alert("Please specify gender");
+
+                return false;
+
+            }
+            if(l==null||l=="")
+            {
+                alert("Please specify gender");
+
+                return false;
+
+            }
+            if(m==null||m=="")
+            {
+                alert("Please specify gender");
+
+                return false;
+
+            }
+            if(n==null||n=="")
+            {
+                alert("Please specify gender");
+
+                return false;
+
+            }
+            if(o==null||o=="")
+            {
+                alert("Please specify gender");
+
+                return false;
+
+            }
+            if(p==null||p=="")
+            {
+                alert("Please specify gender");
+
+                return false;
+
+            }
+            if(q==null||q=="")
+            {
+                alert("Please specify gender");
+
+                return false;
+
+            }
+
+        }
+        </script>
+
+
+
+    </head>
+
+    
+	<body>    
+       <section>
+	 <form name="regform"  class="register" method="post" onsubmit="return validateForm1()" action="reg.php">
+            
+		<h1>Registration Form</h1>
+            <fieldset class="row2">
+                <legend>Details
+                </legend>
+                <p>
+                    <label>User Name
+                    </label>
+                    <input type="text" class="long" name="uname"/>
+
+                </p>
+		
+ <p>
+                    <label>First Name
+                    </label>
+                    <input type="text" class="long" name="fname"/>
+              
+  </p>
+                <p>
+                    <label>Last Name
+                    </label>
+                    <input type="text" class="long" name="lname"/>
+
+                </p>
+		
+
+<p>
+                    <label>Phone
+                    </label>
+                    <input type="text" maxlength="15" class="long" value="+977-" name="contact"/>
+                
+</p>
+
+
+<p>
+                    <label class="optional">Optional Phone
+                    </label>
+                    <input type="text" maxlength="15" class="long" value="+977-" name="contactland"/>
+                
+</p>
+               
+		 
+
+<p>
+                    <label>location
+                    </label>
+                    <input type="text" class="long" name="location">
+               
+ </p>
+
+    
+<p>
+                    <label>City
+                    </label>
+                    <input type="text" class="long" name="city"/>
+               
+
+ </p>
+ 
+		 
+
+<p>
+                    <label>Zone
+                    </label>
+                     <input type="text" class="long" name="zone"/>
+
+
+</p>
+           
+
+		 
+
+
+<p>
+                    <label>User type
+                    </label>
+                    <select  name="usertype">
+
+                        <option value="Admin">Administration</option>
+			            <option value="User">User</option>
+                        
+                    </select>
+                
+
+</p>
+                
+
+		
+              
+		 
+
+<p>
+                <label>Email
+                </label>
+                <input type="text" class="long" name="email"/>
+</p>
+           
+		 
+
+
+<p>
+                <label>Repeat email
+                </label>
+                <input type="text"  class="long" name="remail"/>
+            
+
+</p>
+           
+		 
+
+<p>
+                <label>Password
+                </label>
+                <input type="password"  class="long" name="pw"/>
+            
+</p>
+            
+		
+
+<p>
+                <label>Repeat Password
+                </label>
+                <input type="password"  class="long" name="rpw"/>
+            
+</p>
+
+                <p>
+                    <label>Occupation
+                    </label>
+                    <input type="text"  class="long" name="occupation"/>
+
+                </p>
+                <p>
+                    <label>Occupation Details
+                    </label>
+                    <input type="text"  class="long" name="occupationd"/>
+
+                </p>
+
+<p>
+                    <label>Gender </label>
+                    <input type="radio" value="Male" name="gender"/>
+                    <label class="gender">Male</label>
+                    <input type="radio" value="Female" name="gender"/>
+                    <label class="gender">Female</label>
+                
+</p>
+               
+		
+		 
+
+<p>
+                    <label>Birthdate
+                    </label>
+                   <input type="date" name="UserDOB">
+</p>
+                
+		
+		
+           
+
+		 </fieldset>
+
+        <div><input type="submit" class="button" name="register" value="Register"></div>
+        <div><input type="button" class="button" name="cancel" value="Cancel" onclick="history.go(-1)"></div>
+        </form>
+    </section>
+    </body>
+</html>
+
+
+
+
